@@ -8,7 +8,7 @@ export default function Card({
   className?: string;
 }) {
   return (
-    <div className={`hover:border-white/50 border border-[#202020] p-2 rounded ${className}`}>
+    <div className={`w-48 hover:border-white/50 border border-[#202020] p-2 rounded ${className}`}>
       {children}
     </div>
   );
