@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   colorScheme: "dark",
   icons: "/siteicon.png",
+  metadataBase: new URL("https://grkndev.vercel.app"),
   openGraph: {
     type: "website",
     title: "Gürkan Çiloğlu",
