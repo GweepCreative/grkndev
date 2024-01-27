@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  
+  transition: all .5s;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.gradient{
+  z-index: -1;
+}
+.background{
+  
+  background-size: cover;
+  background-position-x: -50px;
+  background-repeat: no-repeat;
+}
