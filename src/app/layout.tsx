@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     type: "website",
     title: "Gürkan Çiloğlu",
     description: "Software developer | Backend Developer | Lords of Bots",
-    url: "https://grkn.dev",
+    url: "https://grkndev.vercel.app",
     siteName: "Gürkan Çiloğlu",
     locale: "en_US",
-    images: { url: "/opengraph-image.png", width: 1200, height: 630 },
+    images: { url: "/opengraph-image.png", width: "1200", height: "630" },
   },
   twitter: {
     images: {
