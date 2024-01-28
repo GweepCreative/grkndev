@@ -3,15 +3,19 @@ import { Repo, getRepo } from "@utils/github";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import moment from "moment";
+
 export default function Git() {
   const [repos, setRepos] = useState<Repo[]>([]);
   async function getData() {
-    const repos = await getRepo();
-    setRepos(repos);
+    const res = await fetch("/api/github");
+    const repos = await res.json();
+    setRepos(repos.repos);
   }
+
   useEffect(() => {
     getData();
   }, []);
+
   return (
     <>
       <div className="mt-32">
