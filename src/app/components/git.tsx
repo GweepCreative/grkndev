@@ -1,5 +1,5 @@
 "use client";
-import { Repo, getRepo } from "@utils/github";
+import { Repo } from "@utils/github";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import moment from "moment";
@@ -23,7 +23,9 @@ export default function Git() {
         <div className="grid justify-center md:grid-cols-2 grid-cols-1 lg:grid-cols-3     mb-10 mt-16 gap-5">
           {repos &&
             repos.map((repo: Repo) => (
-              <div
+              <Link
+                target="_blank"
+                href={repo.html_url}
                 key={repo.id}
                 className="h-44 p-5 group grid content-between  border border-[#202020] hover:border-white"
               >
@@ -54,7 +56,7 @@ export default function Git() {
                     <h1>{moment(repo.created_at).format("D / M / YYYY")}</h1>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
         </div>
       </div>
