@@ -8,6 +8,7 @@ export type Repo = {
   description: string | null;
   language: string | null;
   created_at: string | null;
+  html_url: string;
 };
 async function getRepo() {
   try {
