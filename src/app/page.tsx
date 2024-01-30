@@ -94,7 +94,7 @@ export default function Home() {
                   </Card>
                 </Link>
                 <Card>
-                  <p>+9 years of work exp.</p>
+                  <p>+4 years of work exp.</p>
                 </Card>
                 <Card>
                   <p>Turkish, English</p>
