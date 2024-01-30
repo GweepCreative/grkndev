@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className="text-center  flex flex-col justify-center items-center ">
               <h1 className="text-center mt-8 font-semibold text-4xl ">
-                Hi, I'm Gurkan 👋🏻
+                Hi, I'm Gürkan 👋🏻
               </h1>
               <h4 className="text-gray-400 text-xl ">
                 <Typical
@@ -48,9 +48,8 @@ export default function Home() {
                 />
               </h4>
               <h4 className="max-w-3xl mt-8 text-gray-300">
-                "Hello, I am Gurkan, I am someone who deals with software. I
-                learn new things and improve myself every day. In the field of
-                software, I have knowledge and skills in object-oriented
+                "Hello, I am Gürkan, I am someone who deals with software. I
+                learn new things and improve myself every day. I have knowledge and skills in object-oriented
                 programming, web programming, mobile application development and
                 embedded systems."
               </h4>
