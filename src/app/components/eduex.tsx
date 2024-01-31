@@ -14,7 +14,7 @@ const experiences = [
   },
   {
     name: "Private Antakya Teknokent Collage High School",
-    level: "R&D Board Member - Software Department Leader",
+    level: "R&D Chairman of the Board - R&D Director",
     join: "2022",
     out: "Current",
   },
