@@ -7,8 +7,8 @@ const educations = [
 
 const experiences = [
   {
-    name: "Founder & CEO",
-    level: "RabeL Development & RabeL Code Startup",
+    name: "RabeL Development & RabeL Code Startup",
+    level: "Founder & CEO",
     join: "2022",
     out: "Current",
   },
