@@ -7,6 +7,12 @@ const educations = [
 
 const experiences = [
   {
+    name: "Founder & CEO",
+    level: "RabeL Development & RabeL Code Startup",
+    join: "2022",
+    out: "Current",
+  },
+  {
     name: "Private Antakya Teknokent Collage High School",
     level: "R&D Board Member - Software Department Leader",
     join: "2022",
@@ -22,7 +28,7 @@ const experiences = [
     name: "Discord Inc",
     level: "Intern",
     join: "2022",
-    out: "2022",
+    out: "2023",
   },
 ];
 
