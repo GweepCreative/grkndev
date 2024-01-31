@@ -13,7 +13,7 @@ const experiences = [
     out: "Current",
   },
   {
-    name: "Private Antakya Teknokent Collage High School",
+    name: "Teknokent Collages",
     level: "R&D Chairman of the Board - R&D Director",
     join: "2022",
     out: "Current",
