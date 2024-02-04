@@ -57,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html className="w-full flex justify-center" lang="en">
-      <body className="h-full max-w-[90rem] flex flex-col overflow-x-hidden md:px-20 sm:px-14 px-8 lg:px-24 text-white bg-[#121212] w-full">
+      <body className="h-full max-w-[90rem] flex flex-col overflow-x-hidden md:px-20 sm:px-14 px-8 lg:px-24 text-white bg-[#0F0816] w-full">
         <div className={montserrat.className}>{children}</div>
       </body>
     </html>
