@@ -48,10 +48,10 @@ export default function Home() {
                 />
               </h4>
               <h4 className="max-w-3xl mt-8 text-gray-300">
-                "Hello, I am Gürkan, I am someone who deals with software. I
-                learn new things and improve myself every day. I have knowledge and skills in object-oriented
+                "Hello, I am Gürkan, I work in the field of software. I
+                Learn new things and improve myself every day. I have knowledge and skills in object-oriented
                 programming, web programming, mobile application development and
-                embedded systems."
+                embedded systems. I am open for work."
               </h4>
 
               <div className="flex flex-wrap gap-y-1 gap-x-5 p-10 items-center justify-center ">
