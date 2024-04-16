@@ -6,7 +6,7 @@ export default function Main() {
       <div className="z-[1] w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24">
         <div className="mx-auto w-full lg:mb-0 lg:max-w-3xl flex flex-col gap-y-10">
           <p>
-            Hi 👋 I'm Gürkan (meaning "Goor-kahn" in English), a software
+            Hi 👋 I&apos;m Gürkan (meaning &quot;Goor-kahn&quot; in English), a software
             engineer, speaker, and writer. He is passionate about web
             technologies, performance, and accessibility.
           </p>

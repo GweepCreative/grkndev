@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { NavigationLink } from "@/components/navigation-link";
-import { PROFILES, LINKS } from "@/lib/constants";
+import { PROFILES } from "@/lib/constants";
 
 export default function Navbar() {
   return (
@@ -27,7 +27,6 @@ export default function Navbar() {
           <span className="px-2 text-xs font-medium leading-relaxed text-gray-600">
             Online
           </span>
-          ""
           <div className="flex flex-col gap-1">
             {Object.values(PROFILES).map((profile) => (
               <NavigationLink

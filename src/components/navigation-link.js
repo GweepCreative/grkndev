@@ -12,7 +12,7 @@ export const NavigationLink = ({ href, label, icon }) => {
       className="flex items-center justify-between gap-2 rounded-lg p-2 hover:bg-gray-200"
     >
       <span className="inline-flex items-center gap-2 font-medium">
-        {iconCmp} {label}
+        {icon} {label}
       </span>
       <ArrowUpRightIcon size={16} />
     </a>
