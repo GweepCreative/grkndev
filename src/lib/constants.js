@@ -49,10 +49,6 @@ import {
       url: 'https://www.instagram.com/grkndev',
       icon: <InstagramIcon size={16} />
     },
-    readcv: {
-      title: 'Read.cv',
-      url: 'https://read.cv/onur'
-    },
   }
   
   

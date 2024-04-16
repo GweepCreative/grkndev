@@ -1,7 +1,7 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { NavigationLink } from '@/components/navigation-link'
-import { PROFILES, LINKS } from '@/lib/constants'
+import { NavigationLink } from "@/components/navigation-link";
+import { PROFILES, LINKS } from "@/lib/constants";
 
 export default function Navbar() {
   return (
@@ -21,22 +21,23 @@ export default function Navbar() {
             <span className="text-gray-600">Software Engineer</span>
           </div>
         </Link>
-  
-      <hr />
-      <div className="flex flex-col gap-2 text-sm">
-        <span className="px-2 text-xs font-medium leading-relaxed text-gray-600">
-          Online
-        </span>
-        <div className="flex flex-col gap-1">
-          {Object.values(PROFILES).map((profile) => (
-            <NavigationLink
-              key={profile.url}
-              href={profile.url} 
-              label={profile.title}
-              icon={profile.icon}
-            />
-          ))}
-        </div>
+
+        <hr />
+        <div className="flex flex-col gap-2 text-sm">
+          <span className="px-2 text-xs font-medium leading-relaxed text-gray-600">
+            Online
+          </span>
+          ""
+          <div className="flex flex-col gap-1">
+            {Object.values(PROFILES).map((profile) => (
+              <NavigationLink
+                key={profile.url}
+                href={profile.url}
+                label={profile.title}
+                icon={profile.icon}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
