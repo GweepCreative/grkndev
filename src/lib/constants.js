@@ -1,5 +1,5 @@
 import {
-    GithubIcon,
+    Github,
     LinkedinIcon,
     InstagramIcon,
     SparklesIcon,
@@ -18,9 +18,9 @@ import {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="size-4"
-          width="44"
-          height="44"
+          className="w-4"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="#000000"
@@ -37,7 +37,7 @@ import {
     github: {
       title: 'GitHub',
       url: 'https://github.com/GweepCreative',
-      icon: <GithubIcon size={16} />
+      icon: <Github size={16} />
     },
     linkedin: {
       title: 'LinkedIn',

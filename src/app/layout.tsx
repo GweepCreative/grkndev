@@ -1,12 +1,12 @@
-
-import type { Metadata } from "next";
+import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "@/components/ui/toaster";
-import { sharedTitle, sharedDescription } from '@/app/shared-metadata'
-import { PROFILES } from '@/lib/constants'
+import { sharedTitle, sharedDescription } from "@/app/shared-metadata";
+import { PROFILES } from "@/lib/constants";
+import Navbar from "@/components/Layout/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -16,9 +16,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>{children}</main>
-
+      <body className={`${inter.className} p-4`}>
+        <main className="min-h-screen bg-white">
+          <div className="lg:flex">
+            <div className="relative hidden lg:flex w-[20em]">
+              <Navbar />
+            </div>
+            <div className="flex flex-1 items-center justify-center">
+              {children}
+            </div>
+          </div>
+        </main>
         <SpeedInsights />
         <Toaster />
         <Script
@@ -33,40 +41,40 @@ export default function RootLayout({
 }
 
 export const metadata = {
-  metadataBase: new URL('https://grkn.dev'),
+  metadataBase: new URL("https://grkn.dev"),
   robots: {
     index: true,
-    follow: true
+    follow: true,
   },
   title: {
     template: `%s — ${sharedTitle}`,
-    default: sharedTitle
+    default: sharedTitle,
   },
   description: sharedDescription,
   openGraph: {
     title: {
       template: `%s — ${sharedTitle}`,
-      default: sharedTitle
+      default: sharedTitle,
     },
     description: sharedDescription,
     alt: sharedTitle,
-    type: 'website',
-    url: '/',
+    type: "website",
+    url: "/",
     siteName: sharedTitle,
-    locale: 'en_IE'
+    locale: "en_IE",
   },
   alternates: {
-    canonical: '/'
+    canonical: "/",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     site: `@${PROFILES.twitter.username}`,
-    creator: `@${PROFILES.twitter.username}`
+    creator: `@${PROFILES.twitter.username}`,
   },
   other: {
-    pinterest: 'nopin'
-  }
-}
+    pinterest: "nopin",
+  },
+};
 
 export const viewport = {
   themeColor: "white",
