@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} p-4`}>
-        <main className="min-h-screen bg-white">
+        <main className=" bg-white">
           <div className="lg:flex">
             <div className="relative hidden lg:flex w-[20em]">
               <Navbar />
