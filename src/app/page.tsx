@@ -14,13 +14,10 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import useScreenSize from "@/lib/useScreenSize";
+
 import { Button } from "@/components/ui/button";
 export default function Main() {
-  const windowsSize = useScreenSize();
-  // useEffect(() => {
-  //   console.log(windowsSize)
-  // },[windowsSize])
+
   return (
     <div>
       <div className="z-[1] w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24 ">
