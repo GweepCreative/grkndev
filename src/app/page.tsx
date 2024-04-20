@@ -1,8 +1,26 @@
+"use client";
 import { NavigationLink } from "@/components/navigation-link";
-import { PROFILES } from "@/lib/constants";
-import React from "react";
-
+import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { PROFILES, STORE } from "@/lib/constants";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import useScreenSize from "@/lib/useScreenSize";
+import { Button } from "@/components/ui/button";
 export default function Main() {
+  const windowsSize = useScreenSize();
+  // useEffect(() => {
+  //   console.log(windowsSize)
+  // },[windowsSize])
   return (
     <div>
       <div className="z-[1] w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24 ">
@@ -45,6 +63,60 @@ export default function Main() {
               />
             ))}
           </div>
+        </div>
+
+        <div className="mx-auto  mt-4 flex flex-col gap-y-4 justify-center items-center">
+          <p className="font-bold text-xl">My Store</p>
+          <ScrollArea className="w-full md:w-3/4 h-[450px]">
+            <div className="flex flex-col gap-y-4 items-center justify-center">
+              {STORE.map((product, index) => (
+                <Link
+                  key={product.url + index}
+                  href={product.url}
+                  target="_blank"
+                  className="w-full h-full lg:h-3/4 lg:w-full"
+                >
+                  <Card className="w-full">
+                    <CardHeader>
+                      <CardTitle>
+                        <img
+                          className="w-full rounded-md aspect-video"
+                          src={product.img}
+                        />
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex flex-col gap-y-1">
+                      <h1 className="font-bold text-md">
+                        {product.title.length > 45
+                          ? product.title.slice(0, 40) + "..."
+                          : product.title}
+                      </h1>
+                      <p>{product.description.slice(0, 79)}...</p>
+                    </CardContent>
+                    <CardFooter className=" flex flex-row gap-x-2 justify-between items-start">
+                      <div className="flex gap-x-2">
+                        {Object.keys(product.priceList).map((item, index) => (
+                          <Badge key={index} variant={"outline"}>
+                            {item.charAt(0).toLocaleUpperCase() + item.slice(1)}
+                          </Badge>
+                        ))}
+                      </div>
+                      <ArrowUpRight className="hidden lg:block" size={24} />
+                    </CardFooter>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </ScrollArea>
+          <Link
+            href={"https://bionluk.com/gweepcreative"}
+            target="_blank"
+            className="mt-4 w-[200px] xl:w-84"
+          >
+            <Button className="w-full" variant={"outline"}>
+              Show More
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
