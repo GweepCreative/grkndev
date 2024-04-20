@@ -9,9 +9,15 @@ import {
   Wand2Icon,
   BookmarkIcon,
   ArmchairIcon,
+  Mail,
 } from "lucide-react";
 
 export const PROFILES = {
+  Mail: {
+    title: "info@grkn.dev",
+    url: "mailto:info@grkn.dev",
+    icon: <Mail size={16} />,
+  },
   twitter: {
     title: "X (Twitter)",
     username: "GweepCreative",
