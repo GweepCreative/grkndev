@@ -67,7 +67,7 @@ export default function Main() {
 
         <div className="mx-auto  mt-4 flex flex-col gap-y-4 justify-center items-center">
           <p className="font-bold text-xl">My Store</p>
-          <ScrollArea className="w-full md:w-3/4 h-[450px]">
+          <ScrollArea className="w-full lg:w-1/2 md:w-3/4 h-[450px]">
             <div className="flex flex-col gap-y-4 items-center justify-center">
               {STORE.map((product, index) => (
                 <Link
