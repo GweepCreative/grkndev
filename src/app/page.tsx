@@ -62,7 +62,7 @@ export default function Main() {
           </div>
         </div>
 
-        <div className="mx-auto  mt-4 flex flex-col gap-y-4 justify-center items-center">
+        {/* <div className="mx-auto  mt-4 flex flex-col gap-y-4 justify-center items-center">
           <p className="font-bold text-xl">My Store</p>
           <ScrollArea className="w-full lg:w-1/2 md:w-3/4 h-[450px]">
             <div className="flex flex-col gap-y-4 items-center justify-center">
@@ -114,7 +114,7 @@ export default function Main() {
               Show More
             </Button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
