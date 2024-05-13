@@ -36,12 +36,12 @@ export default function Main() {
           </div>
         </div>
         <div className=" mx-auto w-full lg:mb-0 lg:max-w-3xl flex flex-col gap-y-10">
-          <p className="text-justify">
+          <p className="text-justify text-xl">
             Hi 👋 I&apos;m Gürkan, a software engineer, maker, editor, designer,
             jokerman, speaker, and writer. I am passionate about web
             technologies, performance, and accessibility.
           </p>
-          <p className="text-justify">
+          <p className="text-justify text-xl">
             I develop things as a Senior Software Engineer. Previously, I worked
             as a Senior Backend Software Engineer at Discord, Backend Software
             Engineer at Teknokent R&D Team, Fullstack Software Engineer at RabeL
