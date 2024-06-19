@@ -41,7 +41,7 @@ export default function Main() {
             technologies, performance, and accessibility.
           </p>
           <p className="text-justify text-lg">
-            I develop things as a Senior Software Engineer. I'm developing
+            I develop things as a Senior Software Engineer. I&apos;m developing
             somethings for Discord and Samsung. I also have expertise and
             experience in embedded systems, web development, object oriented
             programming.
@@ -53,8 +53,8 @@ export default function Main() {
             Technologies I am interested in
           </h1>
           <div className="grid grid-cols-5 gap-4 my-4">
-            {Object.values(TECS).map((tec) => (
-              <div className="flex justify-center items-center space-x-2 border border-zinc-300 bg-zinc-100 p-2 rounded-xl">
+            {Object.values(TECS).map((tec,index) => (
+              <div key={index} className="flex justify-center items-center space-x-2 border border-zinc-300 bg-zinc-100 p-2 rounded-xl">
                 <img
                   src={tec.icon}
                   className="w-6 h-6"
