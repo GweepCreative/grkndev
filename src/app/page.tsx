@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PROFILES, STORE } from "@/lib/constants";
+import { PROFILES, STORE, TECS } from "@/lib/constants";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect } from "react";
@@ -17,11 +17,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 import { Button } from "@/components/ui/button";
 export default function Main() {
-
   return (
     <div>
       <div className="z-[1] w-full px-6 pb-8 pt-8 lg:px-8 lg:pb-16 lg:pt-24 ">
-        <div className="flex flex-col w-full justify-center items-center my-4 lg:hidden">
+        <div className=" flex flex-col w-full justify-center items-center my-4 lg:hidden">
           <img
             src="/assets/me.jpg"
             alt="Gürkan Çiloğlu"
@@ -42,11 +41,29 @@ export default function Main() {
             technologies, performance, and accessibility.
           </p>
           <p className="text-justify text-lg">
-            I develop things as a Senior Software Engineer. Previously, I worked
-            as a Senior Backend Software Engineer at Discord, Backend Software
-            Engineer at Teknokent R&D Team, Fullstack Software Engineer at RabeL
-            Code, Mobile Developer at RabeL Code, and Specialist at Samsung.
+            I develop things as a Senior Software Engineer. I'm developing
+            somethings for Discord and Samsung. I also have expertise and
+            experience in embedded systems, web development, object oriented
+            programming.
           </p>
+        </div>
+        <div className="w-full h-1 bg-zinc-200 rounded-full my-8" />
+        <div className="justify-center items-center w-full flex flex-col m-4">
+          <h1 className="font-bold text-xl justify-center items-center">
+            Technologies I am interested in
+          </h1>
+          <div className="grid grid-cols-5 gap-4 my-4">
+            {Object.values(TECS).map((tec) => (
+              <div className="flex justify-center items-center space-x-2 border border-zinc-300 bg-zinc-100 p-2 rounded-xl">
+                <img
+                  src={tec.icon}
+                  className="w-6 h-6"
+                  alt=""
+                />
+                <span className="font-bold">{tec.title}</span>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="my-4 flex flex-col rounded py-3 border-t border-zinc-300 lg:hidden">
           <p className="text-center">Useful Links</p>

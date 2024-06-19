@@ -11,7 +11,92 @@ import {
   ArmchairIcon,
   Mail,
 } from "lucide-react";
+import { title } from "process";
 
+export const TECS = {
+  js:{
+    title: "JavaScript",
+    icon: "https://skillicons.dev/icons?i=js&theme=light"
+  },
+  react:{
+    title: "React",
+    icon: "https://skillicons.dev/icons?i=react&theme=light"
+  },
+  ts:{
+    title: "TypeScript",
+    icon: "https://skillicons.dev/icons?i=typescript&theme=light"
+  },
+  node:{
+    title: "Node.js",
+    icon: "https://skillicons.dev/icons?i=nodejs&theme=light"
+  },
+  next:{
+    title: "Next.js",
+    icon: "https://skillicons.dev/icons?i=nextjs&theme=light"
+  },
+  express:{
+    title: "Express",
+    icon: "https://skillicons.dev/icons?i=express&theme=light"
+  },
+  mongo:{
+    title: "MongoDB",
+    icon: "https://skillicons.dev/icons?i=mongodb&theme=light"
+  },
+  mysql:{
+    title: "MySQL",
+    icon: "https://skillicons.dev/icons?i=mysql&theme=light"
+  },
+  firebase:{
+    title: "Firebase",
+    icon: "https://skillicons.dev/icons?i=firebase&theme=light"
+  },
+  postgres:{
+    title: "PostgreSQL",
+    icon: "https://skillicons.dev/icons?i=postgresql&theme=light"
+  },
+  graphql:{
+    title: "GraphQL",
+    icon: "https://skillicons.dev/icons?i=graphql&theme=light"
+  },
+  csharp:{
+    title: "C#",
+    icon: "https://skillicons.dev/icons?i=cs&theme=light"
+  },
+  python:{
+    title: "Python",
+    icon: "https://skillicons.dev/icons?i=python&theme=light"
+  },
+  cpp:{
+    title: "C++",
+    icon: "https://skillicons.dev/icons?i=cpp&theme=light"
+  },
+  arduino:{
+    title: "Arduino",
+    icon: "https://skillicons.dev/icons?i=arduino&theme=light"
+  },
+  html:{
+    title: "HTML",
+    icon: "https://skillicons.dev/icons?i=html&theme=light"
+  },
+  css:{
+    title: "CSS",
+    icon: "https://skillicons.dev/icons?i=css&theme=light"
+  },
+  tailwind:{
+    title: "Tailwind CSS",
+    icon: "https://skillicons.dev/icons?i=tailwindcss&theme=light"
+  },
+  git:{
+    title: "Git",
+    icon: "https://skillicons.dev/icons?i=git&theme=light"
+  },
+  figma:{
+    title: "Figma",
+    icon: "https://skillicons.dev/icons?i=figma&theme=light"
+  },
+
+
+}
 export const PROFILES = {
   Mail: {
     title: "info@grkn.dev",
@@ -20,8 +105,8 @@ export const PROFILES = {
   },
   twitter: {
     title: "X (Twitter)",
-    username: "GweepCreative",
-    url: "https://twitter.com/intent/user?screen_name=GweepCreative",
+    username: "grkndev",
+    url: "https://twitter.com/intent/user?screen_name=grkndev",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +135,6 @@ export const PROFILES = {
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/grkndev",
     icon: <LinkedinIcon size={16} />,
-  },
-  instagram: {
-    title: "Instagram",
-    url: "https://www.instagram.com/grkndev",
-    icon: <InstagramIcon size={16} />,
   },
   bionluk: {
     title: "Bionluk",

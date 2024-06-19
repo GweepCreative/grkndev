@@ -19,10 +19,10 @@ export default function RootLayout({
       <body className={`${inter.className} p-4`}>
         <main className=" bg-white">
           <div className="lg:flex">
-            <div className="relative hidden lg:flex w-[20em]">
+            <div className=" relative hidden lg:flex w-[20em]">
               <Navbar />
             </div>
-            <div className="flex flex-1 items-center justify-center">
+            <div className=" flex flex-1 items-center justify-center">
               {children}
             </div>
           </div>
