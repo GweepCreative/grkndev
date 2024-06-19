@@ -52,9 +52,9 @@ export default function Main() {
           <h1 className="font-bold text-xl justify-center items-center">
             Technologies I am interested in
           </h1>
-          <div className="grid grid-cols-5 gap-4 my-4">
+          <div className="cursor-default  grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-4 my-4">
             {Object.values(TECS).map((tec,index) => (
-              <div key={index} className="flex justify-center items-center space-x-2 border border-zinc-300 bg-zinc-100 p-2 rounded-xl">
+              <div key={index} className="flex justify-center items-center space-x-2 border border-zinc-300 hover:bg-zinc-200 bg-zinc-100 transition-colors p-2 rounded-xl">
                 <img
                   src={tec.icon}
                   className="w-6 h-6"
