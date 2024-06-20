@@ -34,7 +34,7 @@ export const TECS = {
     title: "Go",
     icon: "https://skillicons.dev/icons?i=go&theme=light"
   },
-  
+
 
   js:{
     title: "JavaScript",
@@ -106,6 +106,18 @@ export const TECS = {
   figma:{
     title: "Figma",
     icon: "https://skillicons.dev/icons?i=figma&theme=light"
+  },
+  ps:{
+    title: "Photoshop",
+    icon: "https://skillicons.dev/icons?i=ps&theme=light"
+  },
+  ae:{
+    title: "After Effects",
+    icon: "https://skillicons.dev/icons?i=ae&theme=light"
+  },
+  pr:{
+    title: "Premiere Pro",
+    icon: "https://skillicons.dev/icons?i=pr&theme=light"
   },
 
   
