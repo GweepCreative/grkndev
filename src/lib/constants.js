@@ -14,13 +14,26 @@ import {
 import { title } from "process";
 
 export const TECS = {
+  csharp:{
+    title: "C#",
+    icon: "https://skillicons.dev/icons?i=cs&theme=light"
+  },
+  python:{
+    title: "Python",
+    icon: "https://skillicons.dev/icons?i=python&theme=light"
+  },
+  cpp:{
+    title: "C++",
+    icon: "https://skillicons.dev/icons?i=cpp&theme=light"
+  },
+  arduino:{
+    title: "Arduino",
+    icon: "https://skillicons.dev/icons?i=arduino&theme=light"
+  },
+
   js:{
     title: "JavaScript",
     icon: "https://skillicons.dev/icons?i=js&theme=light"
-  },
-  react:{
-    title: "React",
-    icon: "https://skillicons.dev/icons?i=react&theme=light"
   },
   ts:{
     title: "TypeScript",
@@ -30,6 +43,14 @@ export const TECS = {
     title: "Node.js",
     icon: "https://skillicons.dev/icons?i=nodejs&theme=light"
   },
+  react:{
+    title: "React",
+    icon: "https://skillicons.dev/icons?i=react&theme=light"
+  },
+  rn:{
+    title: "React Native",
+    icon: "https://skillicons.dev/icons?i=react&theme=light"
+  },
   next:{
     title: "Next.js",
     icon: "https://skillicons.dev/icons?i=nextjs&theme=light"
@@ -38,6 +59,7 @@ export const TECS = {
     title: "Express",
     icon: "https://skillicons.dev/icons?i=express&theme=light"
   },
+
   mongo:{
     title: "MongoDB",
     icon: "https://skillicons.dev/icons?i=mongodb&theme=light"
@@ -58,22 +80,7 @@ export const TECS = {
     title: "GraphQL",
     icon: "https://skillicons.dev/icons?i=graphql&theme=light"
   },
-  csharp:{
-    title: "C#",
-    icon: "https://skillicons.dev/icons?i=cs&theme=light"
-  },
-  python:{
-    title: "Python",
-    icon: "https://skillicons.dev/icons?i=python&theme=light"
-  },
-  cpp:{
-    title: "C++",
-    icon: "https://skillicons.dev/icons?i=cpp&theme=light"
-  },
-  arduino:{
-    title: "Arduino",
-    icon: "https://skillicons.dev/icons?i=arduino&theme=light"
-  },
+  
   html:{
     title: "HTML",
     icon: "https://skillicons.dev/icons?i=html&theme=light"
@@ -86,6 +93,7 @@ export const TECS = {
     title: "Tailwind CSS",
     icon: "https://skillicons.dev/icons?i=tailwindcss&theme=light"
   },
+
   git:{
     title: "Git",
     icon: "https://skillicons.dev/icons?i=git&theme=light"
@@ -95,6 +103,10 @@ export const TECS = {
     icon: "https://skillicons.dev/icons?i=figma&theme=light"
   },
 
+  go:{
+    title: "Go",
+    icon: "https://skillicons.dev/icons?i=go&theme=light"
+  },
 
 }
 export const PROFILES = {
