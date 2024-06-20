@@ -30,6 +30,11 @@ export const TECS = {
     title: "Arduino",
     icon: "https://skillicons.dev/icons?i=arduino&theme=light"
   },
+  go:{
+    title: "Go",
+    icon: "https://skillicons.dev/icons?i=go&theme=light"
+  },
+  
 
   js:{
     title: "JavaScript",
@@ -103,10 +108,7 @@ export const TECS = {
     icon: "https://skillicons.dev/icons?i=figma&theme=light"
   },
 
-  go:{
-    title: "Go",
-    icon: "https://skillicons.dev/icons?i=go&theme=light"
-  },
+  
 
 }
 export const PROFILES = {
